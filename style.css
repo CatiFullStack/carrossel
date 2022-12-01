@@ -1,0 +1,134 @@
+footer {
+    font-size: smaller;
+}
+
+body {
+    background-image: url(img/fundo.jpg);
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+
+}
+
+header {
+    margin-top: 10px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #df4c83;
+}
+
+/* FORMATAÇÃO DO CONTAINER */
+
+.container {
+    border-radius: 10px;
+    margin-top: 20px;
+    height: 450px;
+    width: 800px;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* FORMATAÇÃO DA NAVEGAÇÃO */
+
+.navegacao {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+}
+
+.bar {
+    background-color: #df4c83;
+    width: 30px;
+    height: 5px;
+    margin: 6px;
+    transition: .3s;
+}
+
+.bar:hover {
+background-color: rgba(177, 177, 177, .9);
+}
+
+input {
+    display: none;
+}
+
+.imagens {
+    display: flex;
+    width: 600%;
+    height: 100%;
+}
+
+.imagem {
+    width: 16.6666666667%;
+    transition: .3s;
+}
+
+.imagem img {
+    width: 100%;
+}
+
+/* TRANSIÇÃO DAS IMAGENS */
+
+#imagem1:checked ~ .img1 {
+    margin-left: 0;
+}
+
+#imagem2:checked ~ .img1 {
+    margin-left: -16.6666666667%;
+}
+
+#imagem3:checked ~ .img1 {
+    margin-left: -33.6666666667%;
+}
+
+#imagem4:checked ~ .img1 {
+    margin-left: -50%;
+}
+
+#imagem5:checked ~ .img1 {
+    margin-left: -66.6666666668%;
+}
+
+#imagem6:checked ~ .img1 {
+    margin-left: -83.3333333335%;
+}
+
+nav {
+    width: 800px;
+    text-align: center;
+    border-radius: 10px;
+    color: #fff;
+    background-color: #df4c83;
+    text-decoration: none;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+}
+
+.texto {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    text-align: center;
+    height: 60px;
+    transform: translate(-50%);
+    border-radius: 15px;
+    color: #fff;
+    background-color: #df4c83;
+}
+
+strong {
+    color: black;
+}
+
+
