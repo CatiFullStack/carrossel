@@ -131,4 +131,7 @@ strong {
     color: black;
 }
 
+a {
+    text-decoration:none;
+}
 
